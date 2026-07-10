@@ -1,0 +1,5 @@
+FOR SAFE PRACTICE
+I have created an .env file to ensure that my database APIs are secure and not exposed to the public. 
+The .env file contains sensitive information such as database credentials and connection strings, 
+which should not be hardcoded in the application code. 
+By using environment variables, I can keep this information private and easily change it without modifying the codebase.
