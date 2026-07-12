@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
 :root {
   --ink: #14161a;
@@ -244,4 +244,77 @@ body {
 @media (max-width: 480px) {
   .auth-card, .profile-card { padding: 26px 20px; }
   .field-row { flex-direction: column; gap: 0; }
+} */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+}
+
+/* Navbar Brand */
+.navbar-brand {
+  letter-spacing: 0.5px;
+}
+
+/* Avatar */
+.avatar {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: #0d6efd;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+/* Profile Interest Badges */
+#fInterests .badge {
+  margin-right: 6px;
+  margin-bottom: 6px;
+}
+
+/* Card Animation */
+.card {
+  border-radius: 12px;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Buttons */
+.btn {
+  border-radius: 8px;
+}
+
+/* Form Controls */
+.form-control,
+.form-select,
+textarea {
+  border-radius: 8px;
+}
+
+.form-control:focus,
+textarea:focus {
+  box-shadow: 0 0 0 .2rem rgba(13, 110, 253, .15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+
+  .card-body {
+    padding: 2rem;
+  }
+
+  .avatar {
+    width: 65px;
+    height: 65px;
+    font-size: 26px;
+  }
+
 }

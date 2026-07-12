@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -38,4 +38,112 @@
 <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 <script src="js/login.js"></script>
 </body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign In — Nura AI Labs</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
+    <div class="container">
+      <a class="navbar-brand fw-semibold" href="index.html">
+        Nura AI Labs
+      </a>
+    </div>
+  </nav>
+
+  <!-- Login Card -->
+  <div class="container py-5">
+
+    <div class="row justify-content-center">
+
+      <div class="col-lg-5 col-md-7">
+
+        <div class="card shadow border-0">
+
+          <div class="card-body p-5">
+
+            <h2 class="text-center fw-bold mb-2">
+              Sign In
+            </h2>
+
+            <p class="text-center text-muted mb-4">
+              Welcome back. Please login to continue.
+            </p>
+
+            <!-- AJAX Messages -->
+            <div id="formMsg" class="alert d-none"></div>
+
+            <form id="loginForm">
+
+              <div class="mb-3">
+                <label for="identifier" class="form-label">
+                  Username or Email
+                </label>
+
+                <input type="text" id="identifier" class="form-control" placeholder="Enter username or email" required>
+              </div>
+
+              <div class="mb-4">
+                <label for="password" class="form-label">
+                  Password
+                </label>
+
+                <input type="password" id="password" class="form-control" placeholder="Enter password" required>
+              </div>
+
+              <button type="submit" id="submitBtn" class="btn btn-primary w-100">
+
+                Sign In
+
+              </button>
+
+            </form>
+
+            <hr class="my-4">
+
+            <p class="text-center mb-0">
+
+              New here?
+
+              <a href="register.html" class="text-decoration-none fw-semibold">
+                Create an account
+              </a>
+
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+
+  <!-- Bootstrap -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Login Script -->
+  <script src="js/login.js"></script>
+
+</body>
+
 </html>
